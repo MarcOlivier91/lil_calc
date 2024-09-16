@@ -2,7 +2,7 @@ from termcolor import colored
 
 def menu() :
     
-    print(colored("[A] Add", 'red'))
-    print(colored("[B] Substract", "green"))
-    print(colored("[C] Multiply", "blue"))
-    print(colored("[D] Divide", "yellow"))
+    print(colored("[A] Add  ", "black", 'on_white'))
+    print(colored("[B] Substract  ", "black", "on_white"))
+    print(colored("[C] Multiply  ", "black", "on_white"))
+    print(colored("[D] Divide  ","black", "on_white"))
