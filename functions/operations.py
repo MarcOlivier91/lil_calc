@@ -8,7 +8,6 @@ def operations() :
     a = int(input(colored("Choose your first number : ", "white", "on_blue")))
     b = int(input(colored("Choose your second number : ", "white", "on_blue")))
     
-
     match operationChoice:
         case 9:
             print("Bye")
@@ -26,7 +25,7 @@ def operations() :
             print(f"The result is {result}")
         
         case 4 :
-            if int(a) or int(b) != 0 :                
+            if int(a) != 0 and int(b) != 0 :                
                 result = int(a) / int(b)
                 print(f"The result is {result}")
             else:                
