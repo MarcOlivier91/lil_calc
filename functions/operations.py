@@ -8,32 +8,30 @@ def operations() :
     os.system('cls')
     a = int(input(colored("Choose your first number : ", "white", "on_blue")))
     b = int(input(colored("Choose your second number : ", "white", "on_blue")))    
-
-
-    while operationChoice.capitalize() != "F":
-        if operationChoice.capitalize() == "A" :
-            result = float(a) + float(b)
+    while operationChoice.capitalize() != 9:
+        if operationChoice.capitalize() == 1 :
+            result = int(a) + int(b)
             print(f"The result is {result}")
         
-        if operationChoice.capitalize() == "B" :
-            result = float(a) - float(b)
+        elif operationChoice.capitalize() == 2 :
+            result = int(a) - int(b)
             print(f"The result is {result}")
         
-        if operationChoice.capitalize == "C" :
-            result = float(a) * float(b)
+        elif operationChoice.capitalize == 3 :
+            result = int(a) * int(b)
             print(f"The result is {result}")
             
-        if operationChoice.capitalize() == "D" :
-            if float(a) or float(b) == 0 :
+        elif operationChoice.capitalize() == 4 :
+            if int(a) or int(b) != 0 :                
+                result = int(a) / int(b)
+                print(f"The result is {result}")
+            else:                
                 print(colored("You cannot divide by zero !", "black", "on_red"))
+
 
         sleep(3)
         os.system('cls')
-
         inputs()
-        a = 0
-        b = 0
         operationChoice = input()
-
 
     print("Bye")
