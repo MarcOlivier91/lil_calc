@@ -7,7 +7,7 @@ def operations() :
     try:
         operationChoice = int(input())
         if operationChoice == 5:
-            print("Bye")
+            print(colored("Goodbye !", "white", "on_blue"))
             exit(0)
 
         if operationChoice > 5:
