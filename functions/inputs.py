@@ -6,4 +6,4 @@ def inputs() :
     print(colored("[2] Substract  ", "black", "on_white"))
     print(colored("[3] Multiply  ", "black", "on_white"))
     print(colored("[4] Divide  ","black", "on_white"))
-    print(colored("[9] Close program  ","black", "on_white"))
+    print(colored("[5] Close program  ","black", "on_white"))
