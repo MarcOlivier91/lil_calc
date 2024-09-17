@@ -7,21 +7,23 @@ def operations() :
     operationChoice = input()
     os.system('cls')
     a = int(input(colored("Choose your first number : ", "white", "on_blue")))
-    b = int(input(colored("Choose your second number : ", "white", "on_blue")))    
-    while operationChoice.capitalize() != 9:
-        if operationChoice.capitalize() == 1 :
+    b = int(input(colored("Choose your second number : ", "white", "on_blue")))
+    print(a)    
+    print(b)
+    while operationChoice != 9:
+        if operationChoice == 1 :
             result = int(a) + int(b)
             print(f"The result is {result}")
         
-        elif operationChoice.capitalize() == 2 :
+        elif operationChoice == 2 :
             result = int(a) - int(b)
             print(f"The result is {result}")
         
-        elif operationChoice.capitalize == 3 :
+        elif operationChoice == 3 :
             result = int(a) * int(b)
             print(f"The result is {result}")
             
-        elif operationChoice.capitalize() == 4 :
+        elif operationChoice == 4 :
             if int(a) or int(b) != 0 :                
                 result = int(a) / int(b)
                 print(f"The result is {result}")
@@ -32,6 +34,6 @@ def operations() :
         sleep(3)
         os.system('cls')
         inputs()
-        operationChoice = input()
+    operationChoice = input()
 
     print("Bye")
