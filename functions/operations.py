@@ -4,15 +4,15 @@ from time import sleep
 from functions.inputs import *
 
 def operations() :     
-    operationChoice = input()
-    os.system('cls')
-    # a = int(input(colored("Choose your first number : ", "white", "on_blue")))
-    # b = int(input(colored("Choose your second number : ", "white", "on_blue")))
+    operationChoice = int(input())
+    a = int(input(colored("Choose your first number : ", "white", "on_blue")))
+    b = int(input(colored("Choose your second number : ", "white", "on_blue")))
     
-    if operationChoice == 9:
-        print("Bye")
 
     match operationChoice:
+        case 9:
+            print("Bye")
+
         case 1:
             result = int(a) + int(b)
             print(f"The result is {result}")
@@ -31,4 +31,7 @@ def operations() :
                 print(f"The result is {result}")
             else:                
                 print(colored("You cannot divide by zero !", "black", "on_red"))
+        
+        case _:
+            print(colored("Option Invalide", "black", "on_red"))
 
