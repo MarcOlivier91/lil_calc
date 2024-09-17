@@ -1,6 +1,8 @@
 #Let's Build from here
-from functions.menu import *
-from functions.operationChoice import *
+from functions.startup import *
+from functions.inputs import *
+from functions.operations import *
 
-menu()
-operationChoice()
+startup()
+inputs()
+operations()
